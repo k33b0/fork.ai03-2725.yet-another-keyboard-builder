@@ -154,6 +154,8 @@ function App() {
                   <option value="ec-dynacap">EC DynaCap</option>
                   <option value="pe-foam-south">PE Foam (South-facing)</option>
                   <option value="pe-foam-north">PE Foam (North-facing)</option>
+                  <option value="bottom-foam-south">Bottom Foam (South-Facing)</option>
+                  <option value="bottom-foam-north">Bottom Foam (North-Facing)</option>
 
                 </Form.Select>
                 <Form.Label>Stabilizer Cutout Type</Form.Label>

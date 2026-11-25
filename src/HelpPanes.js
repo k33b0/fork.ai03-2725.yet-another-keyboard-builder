@@ -94,6 +94,11 @@ export function SwitchCutoutPane() {
             <p>Cherry MX 1-pole footprint, 3.3 x 2.9 mm LED window</p>
             <p>For a PE foam sheet that sits on the PCB under MX switches. It has holes only for the center post, pegs, and pins, plus a window for a reverse-mount LED (SK6812MINI-E).<br />
                 South-facing has the LED below the center post, and north-facing has it above. Use <code>_rc</code> to rotate single switches.</p>
+            <br />
+            <h4>Bottom Foam</h4>
+            <p>Kailh CPG151101S11 hotswap socket, 0.5 mm clearance</p>
+            <p>For a foam sheet that sits under the PCB. It has an opening around each hotswap socket body and its solder wings.<br />
+                Drawn from the top, like the plate. South-facing and north-facing match PE Foam. Use <code>_rc</code> to rotate single switches.</p>
 
         </div>
     )

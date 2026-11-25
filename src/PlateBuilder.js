@@ -13,6 +13,7 @@ import { SwitchFutabaMA } from './cutouts/SwitchFutabaMA'
 import { SwitchECGeneric } from './cutouts/SwitchECGeneric'
 import { SwitchECDynaCap } from './cutouts/SwitchECDynaCap'
 import { SwitchPEFoam } from './cutouts/SwitchPEFoam'
+import { SwitchBottomFoam } from './cutouts/SwitchBottomFoam'
 
 import { StabilizerMXBasic } from './cutouts/StabilizerMXBasic'
 import { StabilizerMXSmall } from './cutouts/StabilizerMXSmall'
@@ -80,6 +81,12 @@ export function buildPlate(keysArray, generatorOptions) {
             break;
         case "pe-foam-north":
             switchGenerator = new SwitchPEFoam("north");
+            break;
+        case "bottom-foam-south":
+            switchGenerator = new SwitchBottomFoam("south");
+            break;
+        case "bottom-foam-north":
+            switchGenerator = new SwitchBottomFoam("north");
             break;
 
         default:
