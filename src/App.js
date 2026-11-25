@@ -97,7 +97,7 @@ function App() {
         </a>
 
         <h1 style={{ textTransform: "none" }}>ai03 Plate Generator</h1>
-        <h5 className="pb-2">V2.0</h5>
+        <h5 className="pb-2">V{process.env.REACT_APP_VERSION.split('.').slice(0, 2).join('.')}</h5>
         <p>An advanced plate generator with filleting, kerf, exact dimensions, and a variety of cutouts.</p>
       </div>
 
@@ -152,6 +152,8 @@ function App() {
                   <option value="futaba-ma">Futaba MA</option>
                   <option value="ec-generic">EC OEM/Generic</option>
                   <option value="ec-dynacap">EC DynaCap</option>
+                  <option value="pe-foam-south">PE Foam (South-facing)</option>
+                  <option value="pe-foam-north">PE Foam (North-facing)</option>
 
                 </Form.Select>
                 <Form.Label>Stabilizer Cutout Type</Form.Label>
@@ -167,6 +169,7 @@ function App() {
                   <option value="alps-at101">Alps AT101</option>
                   <option value="ec-generic">EC OEM/Generic</option>
                   <option value="ec-dynacap">EC DynaCap</option>
+                  <option value="pe-foam">PE Foam</option>
                   <option value="none">None</option>
 
                 </Form.Select>

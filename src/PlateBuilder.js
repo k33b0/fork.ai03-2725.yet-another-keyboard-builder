@@ -12,6 +12,7 @@ import { SwitchIRocks } from './cutouts/SwitchIRocks'
 import { SwitchFutabaMA } from './cutouts/SwitchFutabaMA'
 import { SwitchECGeneric } from './cutouts/SwitchECGeneric'
 import { SwitchECDynaCap } from './cutouts/SwitchECDynaCap'
+import { SwitchPEFoam } from './cutouts/SwitchPEFoam'
 
 import { StabilizerMXBasic } from './cutouts/StabilizerMXBasic'
 import { StabilizerMXSmall } from './cutouts/StabilizerMXSmall'
@@ -20,6 +21,7 @@ import { StabilizerAlpsAEK } from './cutouts/StabilizerAlpsAEK'
 import { StabilizerAlpsAT101 } from './cutouts/StabilizerAlpsAT101'
 import { StabilizerECGeneric } from './cutouts/StabilizerECGeneric'
 import { StabilizerECDynaCap } from './cutouts/StabilizerDynaCap'
+import { StabilizerPEFoam } from './cutouts/StabilizerPEFoam'
 import { NullGenerator } from './cutouts/NullGenerator'
 
 import { AcousticMXBasic } from './cutouts/AcousticMXBasic'
@@ -73,6 +75,12 @@ export function buildPlate(keysArray, generatorOptions) {
         case "ec-dynacap":
             switchGenerator = new SwitchECDynaCap();
             break;
+        case "pe-foam-south":
+            switchGenerator = new SwitchPEFoam("south");
+            break;
+        case "pe-foam-north":
+            switchGenerator = new SwitchPEFoam("north");
+            break;
 
         default:
             console.error("Unsupported switch type")
@@ -104,6 +112,9 @@ export function buildPlate(keysArray, generatorOptions) {
             break;
         case "ec-dynacap":
             stabilizerGenerator = new StabilizerECDynaCap();
+            break;
+        case "pe-foam":
+            stabilizerGenerator = new StabilizerPEFoam();
             break;
         default:
             console.error("Unsupported stabilizer type")

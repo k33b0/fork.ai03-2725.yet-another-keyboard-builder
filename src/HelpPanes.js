@@ -89,6 +89,11 @@ export function SwitchCutoutPane() {
             <h4>EC DynaCap</h4>
             <p>14.7 x 14.1 mm, rounded 2.075 mm</p>
             <p>For DynaCap EC switches.</p>
+            <br />
+            <h4>PE Foam</h4>
+            <p>Cherry MX 1-pole footprint, 3.3 x 2.9 mm LED window</p>
+            <p>For a PE foam sheet that sits on the PCB under MX switches. It has holes only for the center post, pegs, and pins, plus a window for a reverse-mount LED (SK6812MINI-E).<br />
+                South-facing has the LED below the center post, and north-facing has it above. Use <code>_rc</code> to rotate single switches.</p>
 
         </div>
     )
@@ -122,6 +127,10 @@ export function OtherCutoutPane() {
             <br />
             <h4>EC DynaCap</h4>
             <p>DynaCap EC stabilizer sizes.</p>
+            <br />
+            <h4>PE Foam</h4>
+            <p>A U-shaped opening around PCB-mount MX stabilizer housings and the wire, for a PE foam sheet.<br />
+                The wire is on the south side. Use <code>_rs: 180</code> to flip it.</p>
             <br />
             <h2>Acoustic Cutout Types</h2>
             <br />
